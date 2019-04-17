@@ -46,8 +46,23 @@ class Polygon:
 def segmentIntersection(seg1, seg2):
     pass
 
-def intersection(poly1, poly2):
-    pass
+def signedArea(a, b, c):
+    area = (b[0] - a[0]) * (c[1] - a[1]) - (c[0] - a[0]) * (b[1] - a[1])
+
+    if area > 0:
+        return 1
+    elif area < 0:
+        return -1
+    else:
+        return 0
+
+def polyIntersection(poly1, poly2):
+    n = len(poly1)
+    m = len(poly2)
+    a = 0
+    b = 0
+
+
 
 def main():
     window = Window(600)

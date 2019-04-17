@@ -43,6 +43,9 @@ class Polygon:
         self.points = in_points
         self.color = in_color
 
+def segmentIntersection(seg1, seg2):
+    pass
+
 def intersection(poly1, poly2):
     pass
 
